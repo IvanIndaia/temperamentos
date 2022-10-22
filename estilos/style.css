@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 800px; */
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+thead,
+.title {
+    background-color: gray;
+    color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 7px;
+    text-align: center;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: rgba(202, 201, 201, 0.555);
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: white;
+}
+
+#container {
+    overflow-x: auto;
+}
+
+#startTempera {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.900);
+    color: white;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+}
+
+#restart, #starter {
+    padding: 20px;
+    font-size: 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#starter {
+    width: 400px;
+    background-color: green;
+}
