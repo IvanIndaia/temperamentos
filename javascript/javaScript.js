@@ -1,90 +1,53 @@
 
-let S = 0
-let N = 0
-let SN = 0
-
-function start() {
+function starter() {
 
     let S = 0
     let N = 0
     let SN = 0
+    COL = 0
+    SAN = 0
+    MEL = 0
+    FLE = 0
+    COLn = 0
+    SANn = 0
+    MELn = 0
+    FLEn = 0
+
 
     temperamento = []
+    naoTemp = []
 
-    var checkRadio = document.querySelectorAll(
-        'input')
+    var checkRadio = document.querySelectorAll('input')
 
-    for (let i = 0; i < 30; i++) {
-        // console.log(checkRadio[i])
-
-
+    for (let i = 0; i < 144; i++) {
+        //  console.log(checkRadio[i])
         if (checkRadio[i].checked) {
-
             if (checkRadio[i].value == 'S') {
                 S += 1
                 temperamento.push(checkRadio[i].id)
-                // console.log(checkRadio[i].id)
+                if (i == 1 || i == 5 || i == 8 || i == 15 || i == 16 || i == 19 || i == 27 || i == 21 || i == 33 || i == 40 || i == 41 || i == 47 || i == 48) {
+                    COL += 1
+                }
+                if (i == 4 || i == 6 || i == 11 || i == 13 || i == 14 || i == 20 || i == 21 || i == 24 || i == 26 || i == 29 || i == 34 || i == 35 || i == 36 || i == 38 || i == 39 || i == 42 || i == 43 || i == 44 || i == 46) {
+                    SAN += 1
+                }
+                if (i == 2 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12 || i == 13 || i == 17 || i == 18 || i == 20 || i == 22 || i == 24 || i == 25 || i == 28 || i == 30 || i == 31 || i == 37 || i == 47) {
+                    MEL += 1
+                }
+                if (i == 9 || i == 23 || i == 34 || i == 35 || i == 45) {
+                    FLE += 1
+                }
+
+            } else if (checkRadio[i].value == 'N') {
+                N += 1
+                naoTemp.push(checkRadio[i].id)
+            } else {
+                SN += 1
             }
-            // console.log("SELECIONADO: "+checkRadio[i].value)
         }
-
     }
-    alert('O Total de SIM foi: ' + S)
-    alert('Lista => '+ temperamento)
+    alert('O Total de SIM foi: ' + S + '\n O Total de NÃO foi: ' + N)
+    alert('Lista SIM => ' + temperamento + '\n Lista NÃO => ' + naoTemp)
+    alert('Colerico = ' + COL + '\nSanguíneo = ' + SAN + '\nMelancólico = ' + MEL + '\nFleumático = ' + FLE)
 
-
-    // let q1 = document.getElementById("q1a")
-    // let q2 = document.getElementById("q2a")
-    // let q3 = document.getElementById("q3a")
-    // let q4 = document.getElementById("q4a")
-    // let q5 = document.getElementById("q5a")
-    // let q6 = document.getElementById("q6a")
-    // let q7 = document.getElementById("q7a")
-    // let q8 = document.getElementById("q8a")
-    // let q9 = document.getElementById("q9a")
-    // let q10 = document.getElementById("q10a")
-
-    // let quest = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
-
-    // let x = 'q'+ 1
-
-    // quest.forEach(function(n) {
-    //     console.log(n)
-    // }
-
-    // quest.forEach(n => {
-    //     console.log(n.value)
-    // })
-
-
-    // for (let i = 1; i <= 10; i++) {
-    //     if (q1.checked) {
-    //         S += 1
-    //     } else {
-    //         N += 1
-    //     }
-    // }
-
-    // alert(S + " Itens foram marcados" )
-
-    // if (s.checked) {
-    //     alert(ss)
-    // } else {
-    //     alert('Não está selecionado')
-    // }
 }
-
-    // console.log(radioBtns)
-    // radioBtns.forEach(radioBtn => {"change", console.log(radioBtn.value)})
-
-	// let findSelected = () => {
-    //     let sel = document.getElementById("q1")
-    //     let selected = sel.value
-	// 	console.log(selected)
-	// }
-
-	// radioBtns.forEach(radioBtn => {
-	// 	radioBtn.addEventListener("change", findSelected)
-	// })
-	// findSelected()
-
