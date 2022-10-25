@@ -1,5 +1,5 @@
 
-function starter() {
+function start() {
 
     let S = 0
     let N = 0
@@ -16,27 +16,21 @@ function starter() {
 
     temperamento = []
     naoTemp = []
+    
 
     var checkRadio = document.querySelectorAll('input')
 
-    for (let i = 0; i <= 144; i++) {
-        for (let j = 1; j ){
-            for (let j = 1; j ){
-                
-            }
-        }
-    }
-        
+    let y = 0
 
-        for (let i = 0; i <= 48; i++) {
-            // for (let = 1j; j )
+    for (let i = 1; i <= 48; i++) {
+        for (let j = 1; j <= 3; j++) {
             //  console.log(checkRadio[i])
-            if (checkRadio[i].checked) {
+            if (checkRadio[y].checked) {
                 console.log('Contagem ' + i + ' entrou no CHECK.')
-                if (checkRadio[i].value == 'S') {
+                if (checkRadio[y].value == 'S') {
                     console.log('Contagem ' + i + ' entrou no S.')
                     S += 1
-                    temperamento.push(checkRadio[i].id)
+                    temperamento.push(checkRadio[y].id)
                     if (i == 1 || i == 5 || i == 8 || i == 15 || i == 16 || i == 19 || i == 27 || i == 21 || i == 33 || i == 40 || i == 41 || i == 47 || i == 48) {
                         if (i == 5 || i == 8 || i == 47) {
                             COL += 0.5
@@ -73,9 +67,9 @@ function starter() {
                             console.log('====> Somando 1 na Contagem: ' + i + ' do Fleumático')
                         }
                     }
-                } else if (checkRadio[i].value == 'N') {
+                } else if (checkRadio[y].value == 'N') {
                     N += 1
-                    naoTemp.push(checkRadio[i].id)
+                    naoTemp.push(checkRadio[y].id)
                     if (i == 1 || i == 5 || i == 8 || i == 15 || i == 16 || i == 19 || i == 27 || i == 21 || i == 33 || i == 40 || i == 41 || i == 47 || i == 48) {
                         if (i == 5 || i == 8 || i == 47) {
                             nCOL += 0.5
@@ -108,15 +102,19 @@ function starter() {
                     SN += 1
                 }
             } else {
-                alert('Favor marcar a questão: ' + i)
-                break
+                // alert('Favor marcar a questão: ' + i)
+                // break
             }
         }
-        med -= SN
-        console.log('O Total de SIM foi: ' + S + '\n O Total de NÃO foi: ' + N)
-        console.log('Lista SIM => ' + temperamento + '\nLista NÃO => ' + naoTemp)
-        console.log('Colerico = ' + COL + '\nSanguíneo = ' + SAN + '\nMelancólico = ' + MEL + '\nFleumático = ' + FLE)
-        console.log('Não Colerico = ' + nCOL + '\nNão Sanguíneo = ' + nSAN + '\nNão Melancólico = ' + nMEL + '\nNão Fleumático = ' + nFLE)
-        console.log('Calcular médica em: ' + med)
-
+        y += 1
     }
+    med -= SN
+    console.log('O Total de SIM foi: ' + S + '\n O Total de NÃO foi: ' + N)
+    console.log('Lista SIM => ' + temperamento + '\nLista NÃO => ' + naoTemp)
+    console.log('Colerico = ' + COL + '\nSanguíneo = ' + SAN + '\nMelancólico = ' + MEL + '\nFleumático = ' + FLE)
+    console.log('Não Colerico = ' + nCOL + '\nNão Sanguíneo = ' + nSAN + '\nNão Melancólico = ' + nMEL + '\nNão Fleumático = ' + nFLE)
+    console.log('Calcular médica em: ' + med)
+}
+
+
+
