@@ -19,7 +19,15 @@ function starter() {
 
     var checkRadio = document.querySelectorAll('input')
 
-    
+    for (let i = 0; i <= 144; i++) {
+        for (let j = 1; j ){
+            for (let j = 1; j ){
+                
+            }
+        }
+    }
+        
+
         for (let i = 0; i <= 48; i++) {
             // for (let = 1j; j )
             //  console.log(checkRadio[i])
