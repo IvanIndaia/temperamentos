@@ -19,14 +19,6 @@ function starter() {
 
     var checkRadio = document.querySelectorAll('input')
 
-    for (let i = 0; i <= 144; i++) {
-        for (let j = 1; j ){
-            for (let j = 1; j ){
-                
-            }
-        }
-    }
-        
 
         for (let i = 0; i <= 48; i++) {
             // for (let = 1j; j )
@@ -119,4 +111,16 @@ function starter() {
         console.log('Não Colerico = ' + nCOL + '\nNão Sanguíneo = ' + nSAN + '\nNão Melancólico = ' + nMEL + '\nNão Fleumático = ' + nFLE)
         console.log('Calcular médica em: ' + med)
 
+    }
+
+    function teste() {
+
+        var checkRadio = document.querySelectorAll('input')
+
+        
+            for (let i = 1; i <= 3 ){
+                for (let j = 1; j<=3; j++ ){
+                    
+                }
+            }      
     }
