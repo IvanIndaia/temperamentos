@@ -113,21 +113,11 @@ function starter() {
 
 }
 
-// function teste() {
 
-//     var checkRadio = document.querySelectorAll('input')
-
-
-//     for (let i = 1; i <= 3 ) {
-//         for (let j = 1; j <= 3; j++) {
-
-//         }
-//     }
-// }
 
 function teste() {
 
-/* ===== INÍCIO ===== */ 
+    /* ===== INÍCIO ===== */
     var matriz = [[], []]
     var checkRadio = document.querySelectorAll('input')
     let cr = 1
@@ -148,6 +138,15 @@ function teste() {
     temperamento = []
     naoTemp = []
 
+    // for (let lin = 1; lin <= 48; lin++) {
+    //     for (let col = 1; col <= 3; col++) {
+    //         // console.log('CHECADO!!!')
+    //         matriz[[lin][col]] = checkRadio[cr].checked
+    //         console.log('Matriz [' + lin + ']' + '[' + col + '] POS: ' + lin + '  = ' + matriz[[lin][col]])
+    //         cr++
+    //     }
+        
+    // }
     for (let lin = 1; lin <= 48; lin++) {
         for (let col = 1; col <= 3; col++) {
             if (checkRadio[cr].checked) {
@@ -211,5 +210,8 @@ function teste() {
     console.log('Não Colerico = ' + nCOL + '\nNão Sanguíneo = ' + nSAN + '\nNão Melancólico = ' + nMEL + '\nNão Fleumático = ' + nFLE)
     console.log('Calcular médica em: ' + med)
 
-/* ===== FIM ===== */ 
+
+    
+
+    /* ===== FIM ===== */
 }
