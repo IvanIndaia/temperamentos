@@ -29,6 +29,16 @@ th, td {
     text-align: center;
 }
 
+th {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+.Q {
+    font-size: 10px;
+}
+
 tbody>tr:nth-child(even) {
     background-color: rgba(202, 201, 202, 0.555);
 }
