@@ -19,7 +19,7 @@ caption {
 
 thead,
 .title {
-    background-color: gray;
+    background-color: rgb(125, 37, 37);
     color: white;
 }
 
@@ -30,7 +30,7 @@ th, td {
 }
 
 tbody>tr:nth-child(even) {
-    background-color: rgba(202, 201, 201, 0.555);
+    background-color: rgba(202, 201, 202, 0.555);
 }
 
 tbody>tr:nth-child(odd) {
