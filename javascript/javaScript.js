@@ -19,7 +19,6 @@ function starter() {
 
     var checkRadio = document.querySelectorAll('input')
 
-
     for (let i = 0; i <= 48; i++) {
         // for (let = 1j; j )
         //  console.log(checkRadio[i])
@@ -133,6 +132,8 @@ function teste() {
     nSAN = 0
     nMEL = 0
     nFLE = 0
+
+    alerta = true
     med = 48
 
     temperamento = []
@@ -145,73 +146,132 @@ function teste() {
     //         console.log('Matriz [' + lin + ']' + '[' + col + '] POS: ' + lin + '  = ' + matriz[[lin][col]])
     //         cr++
     //     }
-        
+
     // }
+
+    /*
+        Lin = Perguntas
+        CR = Vetor
+    */
     for (let lin = 1; lin <= 48; lin++) {
         for (let col = 1; col <= 3; col++) {
             if (checkRadio[cr].checked) {
                 // console.log('CHECADO!!!')
                 // matriz[[lin][col]] = checkRadio[cr].value
                 // console.log('Matriz [' + lin + ']' + '[' + col + '] POS: ' + lin + '  = ' + matriz[[lin][col]])
-                if (checkRadio[cr].value == 'S') {
-                    console.log('Contagem (' + cr + ') entrou no S.')
-                    S += 1
-                    temperamento.push(checkRadio[cr].class)
-                    if (cr == 1 || cr == 5 || cr == 8 || cr == 15 || cr == 16 || cr == 19 || cr == 27 || cr == 21 || cr == 33 || cr == 40 || cr == 41 || cr == 47 || cr == 48) {
-                        if (cr == 5 || cr == 8 || cr == 47) {
-                            COL += 0.5
-                            console.log('====> Somando 0.5 na Contagem: ' + cr + ' do Colérico')
-                        } else {
-                            COL += 1
-                            console.log('====> Somando 1 na Contagem: ' + cr + ' do Colérico')
-                        }
-                    }
-                    if (cr == 4 || cr == 6 || cr == 11 || cr == 13 || cr == 14 || cr == 20 || cr == 21 || cr == 24 || cr == 26 || cr == 29 || cr == 34 || cr == 35 || cr == 36 || cr == 38 || cr == 39 || cr == 42 || cr == 43 || cr == 44 || cr == 46) {
-                        if (cr == 13 || cr == 20 || cr == 24 || cr == 34 || cr == 35) {
-                            SAN += 0.5
-                            console.log('====> Somando 0.5 na Contagem: ' + cr + ' do Sanguíneo')
-                        } else {
-                            SAN += 1
-                            console.log('====> Somando 1 na Contagem: ' + cr + ' do Sanguíneo')
-                        }
-                    }
-                    if (cr == 2 || cr == 3 || cr == 5 || cr == 7 || cr == 8 || cr == 10 || cr == 12 || cr == 13 || cr == 17 || cr == 18 || cr == 20 || cr == 22 || cr == 24 || cr == 25 || cr == 28 || cr == 30 || cr == 31 || cr == 37 || cr == 47) {
-                        if (cr == 5 || cr == 8 || cr == 13 || cr == 20 || cr == 24 || cr == 47) {
-                            MEL += 0.5
-                            console.log('====> Somando 0.5 na Contagem: ' + cr + ' do Melancólico')
-                        } else {
-                            MEL += 1
-                            console.log('====> Somando 1 na Contagem: ' + cr + ' do Melancólico')
-                        }
-                    }
-                    if (cr == 9 || cr == 23 || cr == 34 || cr == 35 || cr == 45) {
-                        if (cr == 34 || cr == 35) {
-                            FLE += 0.5
-                            console.log('====> Somando 0.5 na Contagem: ' + cr + ' do Fleumático')
-                        } else {
-                            FLE += 1
-                            console.log('====> Somando 1 na Contagem: ' + cr + ' do Fleumático')
-                        }
-                    }
-                } else if (checkRadio[cr].value == 'N') {
 
+                /*  ===============================================
+                    =============== ENTRANDO NO SIM ===============
+                    =============================================== 
+                */
+                if (checkRadio[cr].value == 'S') {
+                    console.log('Pergunta (' + lin + ') entrou no S.')
+                    S++
+                    temperamento.push(lin)
+                    if (lin == 1 || lin == 5 || lin == 8 || lin == 15 || lin == 16 || lin == 19 || lin == 27 || lin == 21 || lin == 33 || lin == 40 || lin == 41 || lin == 47 || lin == 48) {
+                        if (lin == 5 || lin == 8 || lin == 47) {
+                            COL += 0.5
+                            // console.log('====> Somando 0.5 na Pergunta: ' + lin + ' do Colérico')
+                        } else {
+                            COL++
+                            // console.log('====> Somando 1 na Pergunta: ' + lin + ' do Colérico')
+                        }
+                    }
+                    if (lin == 4 || lin == 6 || lin == 11 || lin == 13 || lin == 14 || lin == 20 || lin == 21 || lin == 24 || lin == 26 || lin == 29 || lin == 34 || lin == 35 || lin == 36 || lin == 38 || lin == 39 || lin == 42 || lin == 43 || lin == 44 || lin == 46) {
+                        if (lin == 13 || lin == 20 || lin == 24 || lin == 34 || lin == 35) {
+                            SAN += 0.5
+                            // console.log('====> Somando 0.5 na Pergunta: ' + lin + ' do Sanguíneo')
+                        } else {
+                            SAN++
+                            // console.log('====> Somando 1 na Pergunta: ' + lin + ' do Sanguíneo')
+                        }
+                    }
+                    if (lin == 2 || lin == 3 || lin == 5 || lin == 7 || lin == 8 || lin == 10 || lin == 12 || lin == 13 || lin == 17 || lin == 18 || lin == 20 || lin == 22 || lin == 24 || lin == 25 || lin == 28 || lin == 30 || lin == 31 || lin == 37 || lin == 47) {
+                        if (lin == 5 || lin == 8 || lin == 13 || lin == 20 || lin == 24 || lin == 47) {
+                            MEL += 0.5
+                            // console.log('====> Somando 0.5 na Pergunta: ' + lin + ' do Melancólico')
+                        } else {
+                            MEL++
+                            // console.log('====> Somando 1 na Pergunta: ' + lin + ' do Melancólico')
+                        }
+                    }
+                    if (lin == 9 || lin == 23 || lin == 34 || lin == 35 || lin == 45) {
+                        if (lin == 34 || lin == 35) {
+                            FLE += 0.5
+                            // console.log('====> Somando 0.5 na Pergunta: ' + lin + ' do Fleumático')
+                        } else {
+                            FLE++
+                            // console.log('====> Somando 1 na Pergunta: ' + lin + ' do Fleumático')
+                        }
+                    }
+                    /*  ===============================================
+                        =============== ENTRANDO NO NÃO ===============
+                        =============================================== 
+                    */
+                } else if (checkRadio[cr].value == 'N') {
+                    console.log('Pergunta (' + lin + ') entrou no N.')
+                    N++
+                    naoTemp.push(lin)
+                    if (lin == 1 || lin == 5 || lin == 8 || lin == 15 || lin == 16 || lin == 19 || lin == 27 || lin == 21 || lin == 33 || lin == 40 || lin == 41 || lin == 47 || lin == 48) {
+                        if (lin == 5 || lin == 8 || lin == 47) {
+                            nCOL += 0.5
+                            // console.log('====> Somando 0.5 na Pergunta: ' + lin + ' do Colérico')
+                        } else {
+                            nCOL++
+                            // console.log('====> Somando 1 na Pergunta: ' + lin + ' do Colérico')
+                        }
+                    }
+                    if (lin == 4 || lin == 6 || lin == 11 || lin == 13 || lin == 14 || lin == 20 || lin == 21 || lin == 24 || lin == 26 || lin == 29 || lin == 34 || lin == 35 || lin == 36 || lin == 38 || lin == 39 || lin == 42 || lin == 43 || lin == 44 || lin == 46) {
+                        if (lin == 13 || lin == 20 || lin == 24 || lin == 34 || lin == 35) {
+                            nSAN += 0.5
+                            // console.log('====> Somando 0.5 na Pergunta: ' + lin + ' do Sanguíneo')
+                        } else {
+                            nSAN++
+                            // console.log('====> Somando 1 na Pergunta: ' + lin + ' do Sanguíneo')
+                        }
+                    }
+                    if (lin == 2 || lin == 3 || lin == 5 || lin == 7 || lin == 8 || lin == 10 || lin == 12 || lin == 13 || lin == 17 || lin == 18 || lin == 20 || lin == 22 || lin == 24 || lin == 25 || lin == 28 || lin == 30 || lin == 31 || lin == 37 || lin == 47) {
+                        if (lin == 5 || lin == 8 || lin == 13 || lin == 20 || lin == 24 || lin == 47) {
+                            nMEL += 0.5
+                            // console.log('====> Somando 0.5 na Pergunta: ' + lin + ' do Melancólico')
+                        } else {
+                            nMEL++
+                            // console.log('====> Somando 1 na Pergunta: ' + lin + ' do Melancólico')
+                        }
+                    }
+                    if (lin == 9 || lin == 23 || lin == 34 || lin == 35 || lin == 45) {
+                        if (lin == 34 || lin == 35) {
+                            nFLE += 0.5
+                            // console.log('====> Somando 0.5 na Pergunta: ' + lin + ' do Fleumático')
+                        } else {
+                            nFLE++
+                            // console.log('====> Somando 1 na Pergunta: ' + lin + ' do Fleumático')
+                        }
+                    }
+                    /* =============== ENTRANDO NO NÃO SEI ===============*/
+                } else {
+                    SN++
                 }
 
             } else {
 
             }
+            cr++
         }
-        cr++
     }
-    med -= SN
-    console.log('O Total de SIM foi: ' + S + '\n O Total de NÃO foi: ' + N)
-    console.log('Lista SIM => ' + temperamento + '\nLista NÃO => ' + naoTemp)
-    console.log('Colerico = ' + COL + '\nSanguíneo = ' + SAN + '\nMelancólico = ' + MEL + '\nFleumático = ' + FLE)
-    console.log('Não Colerico = ' + nCOL + '\nNão Sanguíneo = ' + nSAN + '\nNão Melancólico = ' + nMEL + '\nNão Fleumático = ' + nFLE)
-    console.log('Calcular médica em: ' + med)
 
-
-    
+    validador = S + N + SN
+    if (validador != 48) {
+        alert('Responda todas as Perguntas!!!')
+        console.clear()
+    } else {
+        med -= SN
+        console.log('O Total de SIM foi: ' + S + '\n O Total de NÃO foi: ' + N)
+        console.log('Lista SIM => ' + temperamento + '\nLista NÃO => ' + naoTemp)
+        console.log('Colerico = ' + COL + '\nSanguíneo = ' + SAN + '\nMelancólico = ' + MEL + '\nFleumático = ' + FLE)
+        console.log('Não Colerico = ' + nCOL + '\nNão Sanguíneo = ' + nSAN + '\nNão Melancólico = ' + nMEL + '\nNão Fleumático = ' + nFLE)
+        console.log('Calcular médica em: ' + med)
+    }
 
     /* ===== FIM ===== */
 }
