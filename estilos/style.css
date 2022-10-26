@@ -17,6 +17,15 @@ caption {
     padding: 20px;
 }
 
+section {
+    position: static;
+    padding-top: 10vh;
+    overflow: hidden;
+    padding: 5px;
+    height: 110vh;
+    margin-top: 30px;
+}
+
 thead,
 .title {
     background-color: rgb(125, 37, 37);
