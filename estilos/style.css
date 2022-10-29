@@ -56,9 +56,9 @@ tbody>tr:nth-child(odd) {
     background-color: white;
 }
 
-#container {
+/* #container {
     overflow-x: auto;
-}
+} */
 
 #startTempera {
     position: absolute;
