@@ -21,6 +21,7 @@
             <li class="nav-item"><a href="#grupoC" class="nav-link" data-toggle="tab">21 à 30</a></li>
             <li class="nav-item"><a href="#grupoD" class="nav-link" data-toggle="tab">31 à 40</a></li>
             <li class="nav-item"><a href="#grupoE" class="nav-link" data-toggle="tab">41 à 50</a></li>
+            <li class="nav-item"><a href="#grupoF" class="nav-link" data-toggle="tab">Resultado-Final</a></li>
         </ul>
         <input style="display: none;" type="radio" name="" id="">
 
@@ -33,7 +34,7 @@
         ======= QUESTÕES DE 1 À 10 =======
         ==================================
         -->
-                <div> 
+                <div>
                     <table>
                         <thead>
                             <tr>
@@ -549,9 +550,19 @@
                     </table>
                 </div>
             </div>
+            <div id="grupoB" class="tab-pane">
+                <!--
+        ==================================
+        ========= RESULTADO FINAL ========
+        ==================================
+        -->
+                <h3>Resultado Final</h3>
+                <input  onclick="repetir()" type="button" value="Repetir Teste">
+
+            </div>
         </div>
 
-        <input id="back" class="btn btn-secondary" onclick="voltar()" type="button" value="Voltar">
+        <input id="back" class="btn btn-dark" onclick="voltar()" type="button" value="Voltar">
         <input id="star" class="btn btn-success" onclick="starter()" type="button" value="Enviar">
         <input id="next" class="btn btn-dark" onclick="avancar()" type="button" value="Avançar">
 

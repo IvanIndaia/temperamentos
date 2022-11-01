@@ -2,11 +2,21 @@
 function starter() {
 
     /* ===== INÍCIO ===== */
-    var matriz = [[], []]
+    // var matriz = [[], []]
     var checkRadio = document.querySelectorAll('input')
     let cr = 1
 
-    let S, N, SN, COL, SAN, MEL, FLE, nCOL, nSAN, nMEL, nFLE = 0
+    let S = 0 
+    N = 0
+    SN = 0
+    COL = 0
+    SAN = 0
+    MEL = 0
+    FLE = 0
+    nCOL = 0
+    nSAN = 0
+    nMEL = 0
+    nFLE = 0
 
     alerta = true
     med = 48
@@ -135,11 +145,24 @@ function starter() {
         }
     }
 
-    validador = S + N + SN
-    if (validador != 48) {
+    let validador = S + N + SN
+    // console.log(`S = ${S}   N = ${N}   SN = ${SN}`)
+    console.log(`validador vale: ${validador}`)
+    if (validador != 4) {
         alert('Responda todas as Perguntas!!!')
         console.clear()
     } else {
+        var grups = document.getElementsByClassName('tab-pane')
+
+        for (i=0; i<5; i++){
+            grups[i].classList.remove('active')
+        }
+        grups[5].classList.add('active')
+
+        document.getElementById('back').disabled = true
+        document.getElementById('star').disabled = true
+        document.getElementById('next').disabled = true
+
         med -= SN
         console.log('O Total de SIM foi: ' + S + '\n O Total de NÃO foi: ' + N)
         console.log('Lista SIM => ' + temperamento + '\nLista NÃO => ' + naoTemp)
@@ -151,37 +174,64 @@ function starter() {
     /* ===== FIM ===== */
 }
 
+
+aba = 0
 function avancar() {
-    // alert('Avançar!')
+    console.log("Click no AVANÇAR")
 
     var grupos = document.getElementsByClassName('tab-pane')
 
 
-    for (let i = 0; i < 5; i++) {
-        if (grupos[i].className in 'active'){
-            console.log(`Está ativo a aba:  ${i+1}`)
-        }
+    if (aba == 0) {
+        aba = 1
+        grupos[0].classList.remove('active')
+        grupos[1].classList.add('active')
+
+        document.getElementById('back').disabled = false
+
+    } else if (aba == 1) {
+        aba = 2
+        grupos[1].classList.remove('active')
+        grupos[2].classList.add('active')
+    } else if (aba == 2) {
+        aba = 3
+        grupos[2].classList.remove('active')
+        grupos[3].classList.add('active')
+    } else if (aba == 3) {
+        aba = 4
+        grupos[3].classList.remove('active')
+        grupos[4].classList.add('active')
+
+        document.getElementById('next').disabled = true
     }
-
-
-
-
-
-    // aba = 1
-
-    // var a  = document.getElementById("grupoA")
-    // var b  = document.getElementById("grupoB")
-    // var c  = document.getElementById("grupoC")
-    // var d  = document.getElementById("grupoD")
-    // var e  = document.getElementById("grupoE")
-
-    // a.classList.remove("active")
-    // b.classList.add("active")
-
-
 
 }
 
 function voltar() {
-    alert('Voltar!')
+    console.log("Click no VOLTAR")
+    var grupos = document.getElementsByClassName('tab-pane')
+
+    if (aba == 4) {
+        aba = 3
+        grupos[4].classList.remove('active')
+        grupos[3].classList.add('active')
+    } else if (aba == 3) {
+        aba = 2
+        grupos[3].classList.remove('active')
+        grupos[2].classList.add('active')
+    } else if (aba == 2) {
+        aba = 1
+        grupos[2].classList.remove('active')
+        grupos[1].classList.add('active')
+    } else if (aba == 1) {
+        aba = 0
+        grupos[1].classList.remove('active')
+        grupos[0].classList.add('active')
+
+        document.getElementById('back').disabled = true
+    }
+}
+
+function repetir() {
+    $(location).attr('href', 'index.html')
 }
