@@ -154,25 +154,32 @@ function starter() {
 function avancar() {
     // alert('Avançar!')
 
-    aba = 1
+    var grupos = document.getElementsByClassName('tab-pane')
 
-    var a  = document.getElementById("grupoA")
-    var b  = document.getElementById("grupoB")
-    var c  = document.getElementById("grupoC")
-    var d  = document.getElementById("grupoD")
-    var e  = document.getElementById("grupoE")
 
-    a.classList.remove("active")
-    b.classList.add("active")
-    
-    // a.css({
-    //     "visibility": "visible"
-    // })
-   
-    
-    // a.classList.remove('active');
-    // a.classList.toggle('active')
-    // b.classList.toggle('active')
+    for (let i = 0; i < 5; i++) {
+        if (grupos[i].className in 'active'){
+            console.log(`Está ativo a aba:  ${i+1}`)
+        }
+    }
+
+
+
+
+
+    // aba = 1
+
+    // var a  = document.getElementById("grupoA")
+    // var b  = document.getElementById("grupoB")
+    // var c  = document.getElementById("grupoC")
+    // var d  = document.getElementById("grupoD")
+    // var e  = document.getElementById("grupoE")
+
+    // a.classList.remove("active")
+    // b.classList.add("active")
+
+
+
 }
 
 function voltar() {
