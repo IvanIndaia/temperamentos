@@ -1,4 +1,8 @@
 
+function carregandoPagina(){
+    document.getElementById('back').disabled = true
+}
+
 function starter() {
 
     /* ===== INÍCIO ===== */
