@@ -22,7 +22,9 @@
             <li class="nav-item"><a href="#grupoD" class="nav-link" data-toggle="tab">31 à 40</a></li>
             <li class="nav-item"><a href="#grupoE" class="nav-link" data-toggle="tab">41 à 50</a></li>
         </ul>
+        <input style="display: none;" type="radio" name="" id="">
 
+        <h5>Teste de Temperamentos</h5>
         <div class="tab-content">
             <div id="grupoA" class="tab-pane active">
 
@@ -31,9 +33,8 @@
         ======= QUESTÕES DE 1 À 10 =======
         ==================================
         -->
-                <div>
+                <div> 
                     <table>
-                        <caption></caption>
                         <thead>
                             <tr>
                                 <th>Nº</th>
@@ -49,7 +50,7 @@
                                 <td class="Q">Fica logo com raiva quando o ofendem, e tende a se vingar e responder
                                     com um insulto
                                     imediatamente?</td>
-                                <td> <input id="ceu" type="radio" name="q1" class="1" value="S"> </td>
+                                <td> <input type="radio" name="q1" class="1" value="S"> </td>
                                 <td> <input type="radio" name="q1" class="1" value="N"> </td>
                                 <td> <input type="radio" name="q1" class="1" value="SN"> </td>
                             </tr>
@@ -135,7 +136,6 @@
         -->
                 <div>
                     <table>
-                        <caption></caption>
                         <thead>
                             <tr>
                                 <th>Nº</th>
@@ -237,7 +237,6 @@
         -->
                 <div>
                     <table>
-                        <caption></caption>
                         <thead>
                             <tr>
                                 <th>Nº</th>
@@ -342,7 +341,6 @@
         -->
                 <div>
                     <table>
-                        <caption></caption>
                         <thead>
                             <tr>
                                 <th>Nº</th>
@@ -451,7 +449,6 @@
         -->
                 <div>
                     <table>
-                        <caption></caption>
                         <thead>
                             <tr>
                                 <th>Nº</th>
@@ -554,9 +551,9 @@
             </div>
         </div>
 
-        <input class="btn btn-secondary" onclick="voltar()" type="button" value="Voltar">
-        <input class="btn btn-success" onclick="starter()" type="button" value="Enviar">
-        <input class="btn btn-dark" onclick="avancar()" type="button" value="Avançar">
+        <input id="back" class="btn btn-secondary" onclick="voltar()" type="button" value="Voltar">
+        <input id="star" class="btn btn-success" onclick="starter()" type="button" value="Enviar">
+        <input id="next" class="btn btn-dark" onclick="avancar()" type="button" value="Avançar">
 
 
         <script src="javascript/javaScript.js"></script>

@@ -6,17 +6,7 @@ function starter() {
     var checkRadio = document.querySelectorAll('input')
     let cr = 1
 
-    let S = 0
-    let N = 0
-    let SN = 0
-    COL = 0
-    SAN = 0
-    MEL = 0
-    FLE = 0
-    nCOL = 0
-    nSAN = 0
-    nMEL = 0
-    nFLE = 0
+    let S, N, SN, COL, SAN, MEL, FLE, nCOL, nSAN, nMEL, nFLE = 0
 
     alerta = true
     med = 48
@@ -162,10 +152,23 @@ function starter() {
 }
 
 function avancar() {
-    alert('Avançar!')
+    // alert('Avançar!')
 
-    // let a = $('#grupoA')
-    // let b = $('#grupoB')
+    aba = 1
+
+    var a  = document.getElementById("grupoA")
+    var b  = document.getElementById("grupoB")
+    var c  = document.getElementById("grupoC")
+    var d  = document.getElementById("grupoD")
+    var e  = document.getElementById("grupoE")
+
+    a.classList.remove("active")
+    b.classList.add("active")
+    
+    // a.css({
+    //     "visibility": "visible"
+    // })
+   
     
     // a.classList.remove('active');
     // a.classList.toggle('active')

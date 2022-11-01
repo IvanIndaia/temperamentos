@@ -5,6 +5,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     
 }
+.tab-content {
+    margin-bottom: 5px;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: repeating-radial-gradient(#7d2525, white, #7d2525);
+    width: ;
+}
 
 table {
     border-collapse: collapse;
@@ -28,7 +40,7 @@ section {
 
 thead,
 .title {
-    background-color: rgb(125, 37, 37);
+    background-color: #7d2525;
     color: white;
 }
 
@@ -86,4 +98,12 @@ tbody>tr:nth-child(odd) {
 #starter {
     width: 400px;
     background-color: green;
+}
+
+.btn {
+    width: 32%;
+}
+
+.nav {
+    display: none;
 }
