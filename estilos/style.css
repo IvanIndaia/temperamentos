@@ -46,9 +46,16 @@ thead,
 
 th, td {
     border: 1px solid black;
-    padding: 7px;
+    padding: 5px;
     text-align: center;
+    min-height: 20px;
+    overflow: hidden;
+    font-size: 14px;
 }
+
+td:nth-child(2){
+    text-align: left;
+} 
 
 th {
     color: white;
