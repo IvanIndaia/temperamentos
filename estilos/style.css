@@ -7,7 +7,7 @@ body {
 
 #painel {
     /* height: 575px; */
-    height: 70%;
+    height: 50vh;
     overflow: auto;
 }
 
@@ -37,8 +37,9 @@ caption {
 
 thead,
 .title {
-    background-color: #7d2525;
+    background-color: #56a92c;
     color: white;
+    padding: 1px;
 }
 
 th, td {
