@@ -7,7 +7,7 @@ body {
 
 #painel {
     /* height: 575px; */
-    height: 70vh;
+    height: 70%;
     overflow: auto;
 }
 
@@ -21,7 +21,6 @@ h5 {
     margin-bottom: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: repeating-radial-gradient(#7d2525, white, #7d2525);
-    width: ;
 }
 
 table {
