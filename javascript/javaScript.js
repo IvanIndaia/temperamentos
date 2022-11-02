@@ -219,6 +219,8 @@ function voltar() {
         aba = 3
         grupos[4].classList.remove('active')
         grupos[3].classList.add('active')
+
+        document.getElementById('next').disabled = false
     } else if (aba == 3) {
         aba = 2
         grupos[3].classList.remove('active')
