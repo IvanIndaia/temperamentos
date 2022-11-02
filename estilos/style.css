@@ -20,7 +20,10 @@ h5 {
     margin-top: 5px;
     margin-bottom: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: repeating-radial-gradient(#7d2525, white, #7d2525);
+    /* background-image: repeating-radial-gradient(#7d2525, white, #7d2525); */
+    width: 80%;
+    margin-left: 10%;
+    text-shadow: .5px .5px #4a8945;
 }
 
 table {
@@ -37,7 +40,7 @@ caption {
 
 thead,
 .title {
-    background-color: #f70a0a;
+    background-color: #4a8945;
     color: white;
     padding: 1px;
     font-family: Arial, Helvetica, sans-serif;
