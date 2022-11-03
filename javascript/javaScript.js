@@ -1,5 +1,5 @@
 
-function carregandoPagina(){
+function carregandoPagina() {
     document.getElementById('back').disabled = true
 }
 
@@ -10,7 +10,7 @@ function starter() {
     var checkRadio = document.querySelectorAll('input')
     let cr = 1
 
-    let S = 0 
+    let S = 0
     N = 0
     SN = 0
     COL = 0
@@ -158,10 +158,10 @@ function starter() {
     } else {
         var grups = document.getElementsByClassName('tab-pane')
 
-        for (i=0; i<5; i++){
+        for (i = 0; i < 6; i++) {
             grups[i].classList.remove('active')
         }
-        grups[5].classList.add('active')
+        grups[6].classList.add('active')
 
         document.getElementById('back').disabled = true
         document.getElementById('star').disabled = true
@@ -205,6 +205,10 @@ function avancar() {
         aba = 4
         grupos[3].classList.remove('active')
         grupos[4].classList.add('active')
+    } else if (aba == 4) {
+        aba = 5
+        grupos[4].classList.remove('active')
+        grupos[5].classList.add('active')
 
         document.getElementById('next').disabled = true
     }
@@ -215,12 +219,17 @@ function voltar() {
     console.log("Click no VOLTAR")
     var grupos = document.getElementsByClassName('tab-pane')
 
-    if (aba == 4) {
+    if (aba == 5) {
+        aba = 4
+        grupos[5].classList.remove('active')
+        grupos[4].classList.add('active')
+
+        document.getElementById('next').disabled = false
+    }
+    else if (aba == 4) {
         aba = 3
         grupos[4].classList.remove('active')
         grupos[3].classList.add('active')
-
-        document.getElementById('next').disabled = false
     } else if (aba == 3) {
         aba = 2
         grupos[3].classList.remove('active')
