@@ -58,7 +58,8 @@ caption {
 thead,
 .title {
     /* background-color: purple; */
-    background-color: #198e30;
+    /* background-color: #198e30; */
+    background-color: blue;
     color: white;
     padding: 1px;
     font-family: Arial, Helvetica, sans-serif;

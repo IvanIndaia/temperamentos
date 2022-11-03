@@ -144,7 +144,7 @@ function starter() {
     // console.log(`S = ${S}   N = ${N}   SN = ${SN}`)
 
     // console.log(`validador vale: ${validador}`)
-    if (validador < 2) {
+    if (validador < 48) {
         alert('Responda todas as Perguntas!!!')
         console.clear()
     } else if (reprovado == true){
