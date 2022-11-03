@@ -1,18 +1,62 @@
 @charset "UTF-8";
 
-
-
 /* Medium screen devices (768px and above) */
+
 @media only screen and (min-width: 768px) {
- 
+    body {
+        /* background-color: pink; */
+    }
+    #painel {
+        height: 90vh;
+        width: 99vw;
+        overflow: auto;
+    }
+    .tab-content {
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    #bbttnn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn {
+        width: 17%;
+    }
 }
+
 
 /* Big screen devices (889px and above) */
+
 @media only screen and (min-width: 889px) {
-    
+    body {
+        /* background-color: blue; */
+    }
+    .tab-content {
+        /* margin-left: 2%; */
+    }
 }
 
+
 /* Extra big screen devices (1200px and above) */
+
 @media only screen and (min-width: 1200px) {
-    
+    body {
+        /* background-color: purple; */
+    }
+    .tab-content {
+        /* margin-left: 15%; */
+    }
 }
+
+
+/* 
+transition: width .3s, height .3s;
+transition-timing-function: ease; 
+
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+*/

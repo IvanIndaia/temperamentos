@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2px;
@@ -40,6 +38,7 @@ h5 {
 table {
     border-collapse: collapse;
     table-layout: fixed;
+    width: auto;
     /* width: 800px; */
 }
 
@@ -49,23 +48,18 @@ table {
     font-size: 16px;
 }
 
-caption {
-    font-size: 1.2em;
-    font-weight: bolder;
-    padding: 20px;
-}
-
 thead,
 .title {
-    background-color: purple;
-    /* background-color: #198e30; */
+    /* background-color: purple; */
+    background-color: #198e30;
     /* background-color: blue; */
     color: white;
     padding: 1px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 4px;
     text-align: center;
@@ -76,7 +70,7 @@ th, td {
     text-overflow: ellipsis;
 }
 
-td:nth-child(2){
+td:nth-child(2) {
     text-align: left;
     font-size: 12.5px;
 }
@@ -94,6 +88,7 @@ tbody>tr:nth-child(even) {
 tbody>tr:nth-child(odd) {
     background-color: white;
 }
+
 
 /* #container {
     overflow-x: auto;
@@ -113,7 +108,8 @@ tbody>tr:nth-child(odd) {
     top: 0;
 }
 
-#restart, #starter {
+#restart,
+#starter {
     padding: 20px;
     font-size: 20px;
     background-color: yellow;
@@ -136,8 +132,13 @@ tbody>tr:nth-child(odd) {
     display: none;
 }
 
+
 /*=====================================*/
+
+
 /*========== RESULTADO FINAL ==========*/
+
+
 /*=====================================*/
 
 #resultFinal {
@@ -162,11 +163,11 @@ tbody>tr:nth-child(odd) {
     /* display: flex; */
 }
 
-#sim > h6 {
+#sim>h6 {
     color: blue;
 }
 
-#nao > h6 {
+#nao>h6 {
     color: red;
 }
 
@@ -187,7 +188,6 @@ h6 {
 }
 
 
-
 /* ============== ÚLTIMAS QUESTÕES ============== */
 
 .myProgress {
@@ -199,13 +199,15 @@ h6 {
     text-align: center;
     border-radius: 3px;
 }
-#sim > .myProgress > .myBar {
+
+#sim>.myProgress>.myBar {
     position: absolute;
     /* width: 50%; */
     height: 100%;
     background-color: green;
 }
-#nao > .myProgress > .myBar {
+
+#nao>.myProgress>.myBar {
     position: absolute;
     /* width: 50%; */
     height: 100%;
@@ -215,12 +217,15 @@ h6 {
 #smyBarCOL {
     /* width: 75%; */
 }
+
 #smyBarSAN {
     /* width: 50%; */
 }
+
 #smyBarMEL {
     /* width: 40%; */
 }
+
 #smyBarFLE {
     /* width: 20%; */
 }
@@ -228,12 +233,15 @@ h6 {
 #nmyBarCOL {
     /* width: 90%; */
 }
+
 #nmyBarSAN {
     /* width: 50%; */
 }
+
 #nmyBarMEL {
     /* width: 25%; */
 }
+
 #nmyBarFLE {
     /* width: 70%; */
 }
