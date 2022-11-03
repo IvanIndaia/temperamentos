@@ -132,13 +132,13 @@ tbody>tr:nth-child(odd) {
     display: none;
 }
 
+#repeatTst {
+    margin-top: 15px;
+}
+
 
 /*=====================================*/
-
-
 /*========== RESULTADO FINAL ==========*/
-
-
 /*=====================================*/
 
 #resultFinal {
