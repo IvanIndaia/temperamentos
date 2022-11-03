@@ -7,9 +7,9 @@ body {
 
 #painel {
     /* height: 575px; */
-    height: 90vh;
+    height: 85vh;
     overflow: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     box-shadow: 1px 2px 7px;
     border-radius: 5px;
 }
@@ -36,6 +36,12 @@ table {
     /* width: 800px; */
 }
 
+.lastQ {
+    font-weight: bolder;
+    background-color: #198e3093;
+    font-size: 16px;
+}
+
 caption {
     font-size: 1.2em;
     font-weight: bolder;
@@ -44,8 +50,8 @@ caption {
 
 thead,
 .title {
-    background-color: purple;
-    /* background-color: #198e30; */
+    /* background-color: purple; */
+    background-color: #198e30;
     color: white;
     padding: 1px;
     font-family: Arial, Helvetica, sans-serif;
@@ -65,7 +71,7 @@ th, td {
 td:nth-child(2){
     text-align: left;
     font-size: 12px;
-} 
+}
 
 th {
     color: white;
