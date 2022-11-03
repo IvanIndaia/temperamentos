@@ -16,14 +16,19 @@ body {
     border-radius: 5px;
 }
 
+#fundo {
+    background-color: black;
+    color: white
+}
+
 .tab-content {
     margin-bottom: 5px;
 }
 
 h5 {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 3px;
+    /* margin-top: 5px;
+    margin-bottom: 3px; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* background-image: repeating-radial-gradient(#7d2525, white, #7d2525); */
     width: 80%;
@@ -145,13 +150,24 @@ tbody>tr:nth-child(odd) {
 #sim {
     /* border: 1px solid black; */
     height: 50%;
+    overflow: auto;
     /* display: flex; */
 }
 
 #nao {
     /* border: 1px solid blue; */
     height: 50%;
+    overflow: auto;
     /* display: flex; */
+}
+
+h6 {
+    text-align: center;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    text-shadow: .5px .5px #4a8945;
 }
 
 #divH3 {
@@ -168,10 +184,11 @@ tbody>tr:nth-child(odd) {
 .myProgress {
     position: relative;
     width: 98%;
-    height: 30px;
+    height: 20px;
     background-color: rgb(189, 186, 186);
-    margin: 3px;
+    margin: 1px;
     text-align: center;
+    border-radius: 3px;
 }
 #sim > .myProgress > .myBar {
     position: absolute;
