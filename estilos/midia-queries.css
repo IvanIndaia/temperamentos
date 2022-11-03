@@ -24,6 +24,12 @@
     .btn {
         width: 17%;
     }
+    td:nth-child(2) {
+        text-align: left;
+        font-size: 14px;
+        max-width: 500px;
+        word-wrap: break-word;
+    }
 }
 
 
