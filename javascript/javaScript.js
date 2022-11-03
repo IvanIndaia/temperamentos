@@ -144,7 +144,7 @@ function starter() {
     // console.log(`S = ${S}   N = ${N}   SN = ${SN}`)
 
     // console.log(`validador vale: ${validador}`)
-    if (validador < 48) {
+    if (validador < 2) {
         alert('Responda todas as Perguntas!!!')
         console.clear()
     } else if (reprovado == true){
@@ -169,12 +169,12 @@ function starter() {
         document.getElementById('star').disabled = true
         document.getElementById('next').disabled = true
 
-        med -= SN
+        // med -= SN
         console.log('O Total de SIM foi: ' + S + '\nO Total de NÃO foi: ' + N)
         console.log('Lista SIM => ' + temperamento + '\nLista NÃO => ' + naoTemp)
         console.log('Colerico = ' + COL + '\nSanguíneo = ' + SAN + '\nMelancólico = ' + MEL + '\nFleumático = ' + FLE)
         console.log('Não Colerico = ' + nCOL + '\nNão Sanguíneo = ' + nSAN + '\nNão Melancólico = ' + nMEL + '\nNão Fleumático = ' + nFLE)
-        console.log('Calcular médica em: ' + med)
+        // console.log('Calcular médica em: ' + med)
     }
 
     /* ===== FIM ===== */
@@ -410,17 +410,27 @@ function resultadoFinal(){
             \nnFLE ${resultadonFLE.toFixed(2)}%
     `)
 
-    // let progress = document.getElementsByClassName('myBar')
-    let progress = $('.myBar')
+    document.getElementById('smyBarCOL').innerHTML = `${resultadoCOL.toFixed(2)}%`
+    document.getElementById('smyBarSAN').innerHTML = `${resultadoSAN.toFixed(2)}%`
+    document.getElementById('smyBarMEL').innerHTML = `${resultadoMEL.toFixed(2)}%`
+    document.getElementById('smyBarFLE').innerHTML = `${resultadoFLE.toFixed(2)}%`
+
+    document.getElementById('nmyBarCOL').innerHTML = `${resultadonCOL.toFixed(2)}%`
+    document.getElementById('nmyBarSAN').innerHTML = `${resultadonSAN.toFixed(2)}%`
+    document.getElementById('nmyBarMEL').innerHTML = `${resultadonMEL.toFixed(2)}%`
+    document.getElementById('nmyBarFLE').innerHTML = `${resultadonFLE.toFixed(2)}%`
+        // let progress = document.getElementsByClassName('myBar')
+    // let progress = $('.myBar')
 
 
 
     let simCOL = $('#smyBarCOL')
     // console.log(simCOL)
+
     simCOL.css({
         "width":`${resultadoCOL.toFixed(2)}%`
     })
-    
+
     let simSAN = $('#smyBarSAN')
     // console.log(simSAN)
     simSAN.css({
