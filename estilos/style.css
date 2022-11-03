@@ -4,6 +4,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2px;
+    margin-right: 5px;
 }
 
 #painel {
@@ -65,13 +66,13 @@ th, td {
     height: 50px;
     max-height: 50px;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 14px;
     text-overflow: ellipsis;
 }
 
 td:nth-child(2){
     text-align: left;
-    font-size: 13px;
+    font-size: 12.5px;
 }
 
 th {
@@ -127,4 +128,86 @@ tbody>tr:nth-child(odd) {
 
 .nav {
     display: none;
+}
+
+/*=====================================*/
+/*========== RESULTADO FINAL ==========*/
+/*=====================================*/
+
+#resultFinal {
+    border: 1px solid black;
+    display: block;
+    overflow: auto;
+    width: 98vw;
+    height: 67vh;
+}
+
+#sim {
+    /* border: 1px solid black; */
+    height: 50%;
+    /* display: flex; */
+}
+
+#nao {
+    /* border: 1px solid blue; */
+    height: 50%;
+    /* display: flex; */
+}
+
+#divH3 {
+    /* border: 1px solid black; */
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+
+
+.myProgress {
+    position: relative;
+    width: 98%;
+    height: 30px;
+    background-color: rgb(189, 186, 186);
+    margin: 3px;
+    text-align: center;
+}
+#sim > .myProgress > .myBar {
+    position: absolute;
+    /* width: 50%; */
+    height: 100%;
+    background-color: green;
+}
+#nao > .myProgress > .myBar {
+    position: absolute;
+    /* width: 50%; */
+    height: 100%;
+    background-color: red;
+}
+
+#smyBarCOL {
+    width: 75%;
+}
+#smyBarSAN {
+    width: 50%;
+}
+#smyBarMEL {
+    width: 40%;
+}
+#smyBarFLE {
+    width: 20%;
+}
+
+#nmyBarCOL {
+    width: 90%;
+}
+#nmyBarSAN {
+    width: 50%;
+}
+#nmyBarMEL {
+    width: 25%;
+}
+#nmyBarFLE {
+    width: 70%;
 }

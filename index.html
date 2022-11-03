@@ -41,7 +41,7 @@
                                     <th>QUESTÃO</th>
                                     <th>SIM</th>
                                     <th>NÃO</th>
-                                    <th>NÃO SEI</th>
+                                    <th>Ñ SEI</th>
                                 </tr>
                             </thead>
                             <tbody id="umaDez">
@@ -140,7 +140,7 @@
                                     <th>QUESTÃO</th>
                                     <th>SIM</th>
                                     <th>NÃO</th>
-                                    <th>NÃO SEI</th>
+                                    <th>Ñ SEI</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -240,7 +240,7 @@
                                     <th>QUESTÃO</th>
                                     <th>SIM</th>
                                     <th>NÃO</th>
-                                    <th>NÃO SEI</th>
+                                    <th>Ñ SEI</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -343,7 +343,7 @@
                                     <th>QUESTÃO</th>
                                     <th>SIM</th>
                                     <th>NÃO</th>
-                                    <th>NÃO SEI</th>
+                                    <th>Ñ SEI</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -450,7 +450,7 @@
                                     <th>QUESTÃO</th>
                                     <th>SIM</th>
                                     <th>NÃO</th>
-                                    <th>NÃO SEI</th>
+                                    <th>Ñ SEI</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -547,7 +547,8 @@
                                 <!---------------------------------------------------->
                                 <tr>
                                     <td class="lastQ">49</td>
-                                    <td class="lastQ">Qual destas disposições são as suas? Escolha uma ou duas opções:</td>
+                                    <td class="lastQ">Qual destas disposições são as suas? Escolha uma ou duas opções:
+                                    </td>
 
                                 </tr>
                                 <!-------------------- Alternativa A -------------------->
@@ -565,7 +566,8 @@
                                 <!-------------------- Alternativa C -------------------->
                                 <tr>
                                     <td>C</td>
-                                    <td><input type="radio" name="q49" class="49" value="S"> Falta de coragem, Evasão(pretexto) do sofrimento;</td>
+                                    <td><input type="radio" name="q49" class="49" value="S"> Falta de coragem,
+                                        Evasão(pretexto) do sofrimento;</td>
                                 </tr>
                                 <!-------------------- Alternativa D -------------------->
                                 <tr>
@@ -578,7 +580,8 @@
                                 <!---------------------------------------------------->
                                 <tr>
                                     <td class="lastQ">50</td>
-                                    <td class="lastQ">Qual destas características lhe são naturais? Escolha uma ou duas opções:</td>
+                                    <td class="lastQ">Qual destas características lhe são naturais? Escolha uma ou duas
+                                        opções:</td>
                                 </tr>
                                 <!-------------------- Alternativa A -------------------->
                                 <tr>
@@ -589,17 +592,20 @@
                                 <!-------------------- Alternativa B -------------------->
                                 <tr>
                                     <td>B</td>
-                                    <td><input type="radio" name="q49" class="49" value="S"> Empatia com os outros, Amor pela solidão e oração;</td>
+                                    <td><input type="radio" name="q49" class="49" value="S"> Empatia com os outros, Amor
+                                        pela solidão e oração;</td>
                                 </tr>
                                 <!-------------------- Alternativa C -------------------->
                                 <tr>
                                     <td>C</td>
-                                    <td><input type="radio" name="q49" class="49" value="S"> Vontade firme, Energia, Audácia, Ambição;</td>
+                                    <td><input type="radio" name="q49" class="49" value="S"> Vontade firme, Energia,
+                                        Audácia, Ambição;</td>
                                 </tr>
                                 <!-------------------- Alternativa D -------------------->
                                 <tr>
                                     <td>D</td>
-                                    <td><input type="radio" name="q49" class="49" value="S"> Alegria, Facilidade para lidar bem com as pessoas difíceis;</td>
+                                    <td><input type="radio" name="q49" class="49" value="S"> Alegria, Facilidade para
+                                        lidar bem com as pessoas difíceis;</td>
                                 </tr>
 
                             </tbody>
@@ -612,8 +618,40 @@
             ========= RESULTADO FINAL ========
             ==================================
             -->
-                    <h3>Resultado Final</h3>
-                    <input onclick="repetir()" type="button" value="Repetir Teste">
+                    <h3 id="divH3">Resultado Final</h3>
+                    <div id="resultFinal">
+                        <div id="sim">
+                            <h5>Respostas SIM</h5>
+                            <div class="myProgress" id="smyProgressCOL">
+                                <div class="myBar" id="smyBarCOL">70%</div>
+                            </div>
+                            <div class="myProgress" id="smyProgressSAN">
+                                <div class="myBar" id="smyBarSAN">50%</div>
+                            </div>
+                            <div class="myProgress" id="smyProgressMEL">
+                                <div class="myBar" id="smyBarMEL">40%</div>
+                            </div>
+                            <div class="myProgress" id="smyProgressFLE">
+                                <div class="myBar" id="smyBarFLE">20%</div>
+                            </div>
+                        </div>
+                        <div id="nao">
+                            <h5>Respostas NÃO</h5>
+                            <div class="myProgress" id="nmyProgressCOL">
+                                <div class="myBar" id="nmyBarCOL">90%</div>
+                            </div>
+                            <div class="myProgress" id="nmyProgressSAN">
+                                <div class="myBar" id="nmyBarSAN">50%</div>
+                            </div>
+                            <div class="myProgress" id="nmyProgressMEL">
+                                <div class="myBar" id="nmyBarMEL">25%</div>
+                            </div>
+                            <div class="myProgress" id="nmyProgressFLE">
+                                <div class="myBar" id="nmyBarFLE">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="btn btn-warning" onclick="repetir()" type="button" value="Repetir Teste">
                 </div>
             </div>
         </div>
