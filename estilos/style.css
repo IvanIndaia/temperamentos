@@ -9,7 +9,7 @@ body {
     /* height: 575px; */
     height: 85vh;
     overflow: auto;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     box-shadow: 1px 2px 7px;
     border-radius: 5px;
 }
@@ -33,6 +33,13 @@ h5 {
     margin-left: 10%;
     text-shadow: .5px .5px #4a8945;
     padding: 3px;
+}
+
+p {
+    padding: 1px;
+    font-size: 11px;
+    margin: 0px;
+    margin-bottom: 5px;
 }
 
 table {
@@ -136,7 +143,15 @@ tbody>tr:nth-child(odd) {
     margin-top: 15px;
 }
 
-
+#grupoG > div > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+}
 /*=====================================*/
 /*========== RESULTADO FINAL ==========*/
 /*=====================================*/
