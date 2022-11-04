@@ -7,11 +7,14 @@ body {
 
 #painel {
     /* height: 575px; */
-    height: 85vh;
-    overflow: auto;
-    margin-bottom: 8px;
+    /* height: 85vh; */
+    /* overflow: auto; */
+    /* display: block; */
+    /* width: 50%; */
+    /* margin-bottom: 8px; */
     box-shadow: 1px 2px 7px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+
 }
 
 #fundo {
@@ -37,9 +40,11 @@ h5 {
 
 p {
     padding: 1px;
-    font-size: 11px;
+    font-size: 12px;
     margin: 0px;
     margin-bottom: 5px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 table {
@@ -70,8 +75,8 @@ td {
     border: 1px solid black;
     padding: 4px;
     text-align: center;
-    height: 50px;
-    max-height: 50px;
+    height: 37px;
+    /* max-height: 50px; */
     overflow: hidden;
     font-size: 14px;
     text-overflow: ellipsis;
@@ -97,11 +102,7 @@ tbody>tr:nth-child(odd) {
 }
 
 
-/* #container {
-    overflow-x: auto;
-} */
-
-#startTempera {
+/* #startTempera {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -113,9 +114,9 @@ tbody>tr:nth-child(odd) {
     align-items: center;
     flex-direction: column;
     top: 0;
-}
+} */
 
-#restart,
+/* #restart,
 #starter {
     padding: 20px;
     font-size: 20px;
@@ -123,12 +124,12 @@ tbody>tr:nth-child(odd) {
     border: none;
     border-radius: 10px;
     margin-top: 10px;
-}
+} */
 
-#starter {
+/* #starter {
     width: 400px;
     background-color: green;
-}
+} */
 
 .btn {
     width: 32%;
