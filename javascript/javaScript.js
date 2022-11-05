@@ -249,6 +249,7 @@ function voltar() {
 }
 
 function repetir() {
+    alert('repetir')
     $(location).attr('href', 'index.html')
 }
 

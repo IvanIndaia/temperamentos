@@ -7,15 +7,16 @@
         /* background-color: pink; */
     }
     #painel {
-        height: 85vh;
-        width: 45vw;
-        overflow: auto;
-        margin-left: 28%;
+        /* height: 89vh; */
+        /* width: 45vw; */
+        /* overflow: scroll; */
+        /* margin-left: 28%; */
     }
     .tab-content {
-        margin-bottom: 5px;
-        display: flex;
-        justify-content: center;
+        /* margin-bottom: 5px; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* overflow: auto; */
     }
     #bbttnn {
         display: flex;
