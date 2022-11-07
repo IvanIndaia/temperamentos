@@ -1,6 +1,7 @@
 
 function carregandoPagina() {
     document.getElementById('back').disabled = true
+    // alert('Oi')
 }
 
 function starter() {
